@@ -1,0 +1,25 @@
+.mt-60px{
+    margin-top: 60px;
+}
+
+.collapse{
+    display: none;
+}
+
+img{
+    aspect-ratio: 16/9;
+    height: auto !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+h3{
+    text-align: left;
+    font-size: 20px;
+}
+
+p{
+    text-align: left;
+    font-size: 15px;
+}
+

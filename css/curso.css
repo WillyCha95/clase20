@@ -1,0 +1,23 @@
+*{
+    margin-left: 20px;
+}
+
+h1{
+    text-align: left;
+    
+}
+
+h3{
+    color: rgb(91, 91, 255);
+}
+
+img{
+    width: 200px;
+    height: 150px;
+
+}
+
+p {
+	font-size: 20px;
+	text-align: initial;
+}

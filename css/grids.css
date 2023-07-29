@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "item-1 item-1 item-2"
+    "item-1 item-1 item-2" 
+    "item-3 item-4 item-2"
+    "item-5 item-4 item-6"
+    "item-5 item-7 item-7"
+    "item-5 item-7 item-7";
+    gap: 1.2rem;
+    width: clamp(600px, 90%, 1000px);
+    margin: 0 auto;
+}
+
+.grilla{
+    border-radius: 20px;
+    min-height: 100px;
+}
+
+.grilla-1{
+    grid-area: item-1;
+    background-color: crimson;
+    color: white;
+}
+.grilla-2{
+    grid-area: item-2;
+    background-color: darkgreen;
+    color: white;
+}
+.grilla-3{
+    grid-area: item-3;
+    background-color: rgb( 56, 55, 55);
+    color: gold;
+    border: 1px solid white;
+}
+.grilla-4{
+    grid-area: item-4;
+    background-color: firebrick;
+    color: teal;
+}
+.grilla-5{
+    grid-area: item-5;
+    background-color: yellow;
+    color: darkblue;
+}
+.grilla-6{
+    grid-area: item-6;
+    background-color: gray;
+    color: greenyellow;
+}
+.grilla-7{
+    grid-area: item-7;
+    border-radius: 1px solid black;
+    background-color: white;
+}
+
+@media screen and (max-width:600px) {
+    .contenedor{
+        grid-template-areas: "item-1"
+        "item-2"
+        "item-3"
+        "item-4"
+        "item-5"
+        "item-6"
+        "item-7";
+    }
+}

@@ -1,0 +1,47 @@
+.br-5{
+    border-radius: 5px;
+}
+
+.card-body::before{
+    content: "xxssss";
+    background-image: linear-gradient(to bottom, transparent);
+    color: white;
+    z-index: 2;
+}
+
+.card-body ::after{
+    content: "Titulo";
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    z-index: 3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-body{
+    display: grid;
+}
+
+.imagen{
+    grid-area: texto;
+    border-radius: 30px;
+}
+
+.contenedor{
+    gap: 32px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+.card{
+    scroll-snap-align: center;
+    width: 300px;
+}
